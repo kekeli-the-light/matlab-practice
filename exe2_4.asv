@@ -1,0 +1,4 @@
+%% Polar plot
+O = 15;
+syms n
+z = (r^-n) * exp((n*O*i);

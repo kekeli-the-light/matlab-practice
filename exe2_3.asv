@@ -1,0 +1,5 @@
+%% Plot of Voltage across a parallel RLC circuit
+
+v = 5.*exp(2.*t).*sin(1000.*pi.*t);
+t = 1:200;
+v_vals = v(0)

@@ -1,0 +1,16 @@
+%% Coulombic force verse radius
+
+q1 = 1.6*10^-19;
+q2 = q1;
+k = 8.99*10^9; % Let k = 1/4*π*ε
+
+F = q1 * q2 * k / r.^2;
+
+rr = 1*10^-15:2.0*10^-15:1.0*10^-14;
+forces = double(subs(F, r, rr));
+
+plot(rr, forces);
+title("Force vrs Radius; Coulomb's equation");
+ylabel("Force (Newton)");
+xlabel("Radius (m)");
+grid on
